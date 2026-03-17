@@ -63,8 +63,27 @@ preview.style.display="block"
 
 m.addEventListener("mousemove",(e)=>{
 
-preview.style.left = (e.pageX + 20) + "px"
-preview.style.top = (e.pageY + 20) + "px"
+const previewWidth = preview.offsetWidth
+const previewHeight = preview.offsetHeight
+
+const pageWidth = window.innerWidth
+const pageHeight = window.innerHeight
+
+let x = e.pageX + 20
+let y = e.pageY + 20
+
+// jeśli wychodzi poza prawą krawędź → pokaż po lewej
+if (x + previewWidth > pageWidth) {
+  x = e.pageX - previewWidth - 20
+}
+
+// jeśli wychodzi poza dół → pokaż wyżej
+if (y + previewHeight > pageHeight) {
+  y = e.pageY - previewHeight - 20
+}
+
+preview.style.left = x + "px"
+preview.style.top = y + "px"
 
 })
 
