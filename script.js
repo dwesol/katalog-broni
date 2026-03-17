@@ -27,7 +27,7 @@ const modele = data.filter(x=>x.producent==p && x.kaliber==k)
 html += "<td><ul>"
 
 modele.forEach(m=>{
-html += `<li class="model" data-img="${m.img}">${m.model}</li>`
+html += `<li class="model" data-id="${m.model}">${m.model}</li>`
 })
 
 html += "</ul></td>"
