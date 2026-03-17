@@ -51,3 +51,33 @@ display:none;
 width:100%;
 border:1px solid #aaa;
 }
+
+#details{
+margin-top:40px;
+padding:20px;
+border:1px solid #ccc;
+display:none;
+}
+
+#details img{
+max-width:300px;
+display:block;
+margin-bottom:20px;
+}
+
+.spec-table{
+border-collapse:collapse;
+width:100%;
+margin-bottom:20px;
+}
+
+.spec-table td{
+border:1px solid #999;
+padding:10px;
+}
+
+.spec-table td:first-child{
+font-weight:bold;
+width:40%;
+background:#f3f3f3;
+}
