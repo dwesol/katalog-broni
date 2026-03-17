@@ -112,3 +112,36 @@ showDetails(item)
 })
 
 }
+
+function showDetails(item){
+
+const container = document.getElementById("details")
+
+let html = `<h2>${item.model}</h2>`
+
+html += `<img src="${item.img}">`
+
+// tabela specyfikacji
+html += `<table class="spec-table">`
+
+for (let key in item.spec){
+html += `<tr>
+<td>${key}</td>
+<td>${item.spec[key]}</td>
+</tr>`
+}
+
+html += `</table>`
+
+// opis
+html += `<p>${item.opis}</p>`
+
+container.innerHTML = html
+container.style.display = "block"
+
+window.scrollTo({
+top: container.offsetTop,
+behavior: "smooth"
+})
+
+}
