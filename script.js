@@ -54,10 +54,17 @@ const img=document.getElementById("preview-img")
 
 models.forEach(m=>{
 
-m.addEventListener("mouseenter",()=>{
+m.addEventListener("mouseenter",(e)=>{
 
 img.src=m.dataset.img
 preview.style.display="block"
+
+})
+
+m.addEventListener("mousemove",(e)=>{
+
+preview.style.left = (e.pageX + 20) + "px"
+preview.style.top = (e.pageY + 20) + "px"
 
 })
 
