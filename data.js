@@ -4,6 +4,7 @@ pistolety: [
 { producent:"Glock", kaliber:"9x19", model:"Glock 17", img:"img/glock17.jpg" },
 { producent:"Glock", kaliber:"9x19", model:"Glock 19", img:"img/glock19.jpg" },
 { producent:"Walther", kaliber:"9x19", model:"PDP", img:"img/pdp.jpg" }
+{ producent:"Walther", kaliber:"22lr", model:"PDP22", img:"img/pdp22.jpg" }
 ],
 
 pm: [
