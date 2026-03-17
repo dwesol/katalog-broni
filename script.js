@@ -76,6 +76,22 @@ preview.style.display="none"
 
 })
 
+models.forEach(m=>{
+
+m.addEventListener("click",()=>{
+
+const name = m.dataset.id
+
+const item = Object.values(katalog)
+.flat()
+.find(x=>x.model === name)
+
+showDetails(item)
+
+})
+
+})
+  
 }
 
 function showDetails(item){
