@@ -93,6 +93,8 @@ preview.style.display="none"
 
 })
 
+})
+
 models.forEach(m=>{
 
 m.addEventListener("click",()=>{
@@ -104,8 +106,6 @@ const item = Object.values(katalog)
 .find(x=>x.model === name)
 
 showDetails(item)
-
-})
 
 })
 
