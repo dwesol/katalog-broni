@@ -22,6 +22,15 @@ let tableHTML = ""
 
 function renderCategory(cat){
 
+currentData = katalog[cat]
+kalibry = [...new Set(currentData.map(x=>x.kaliber))]
+
+kalibry.sort((a,b)=>{
+return kolejnoscKalibrow.indexOf(a) - kolejnoscKalibrow.indexOf(b)
+})
+  
+tableHTML = "<table>"
+  
 const data = katalog[cat]
 
 const producenci = [...new Set(data.map(x=>x.producent))]
