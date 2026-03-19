@@ -5,7 +5,7 @@ const glowniProducenci = [
 ]
 
 const kolejnoscKalibrow = [
-"22lr",
+".22 LR",
 "9x19",
 ".45 ACP",
 ".357 SIG",
