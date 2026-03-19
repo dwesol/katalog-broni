@@ -1,3 +1,25 @@
+const glowniProducenci = [
+"Glock",
+"Walther",
+"SIG Sauer"
+]
+
+const kolejnoscKalibrow = [
+".22 LR",
+"9x19",
+".45 ACP",
+".357 SIG",
+".357 Magnum",
+"5.56x45",
+"7.62x39"
+]
+
+// zmienne globalne
+let currentData = []
+let kalibry = []
+let tableHTML = ""
+
+
 function renderCategory(cat){
 
 const data = katalog[cat]
