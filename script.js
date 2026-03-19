@@ -5,7 +5,7 @@ const glowniProducenci = [
 ]
 
 const kolejnoscKalibrow = [
-".22 LR",
+"22lr",
 "9x19",
 ".45 ACP",
 ".357 SIG",
@@ -29,7 +29,24 @@ kalibry = [...new Set(currentData.map(x=>x.kaliber))]
 
 // sortowanie kalibrów
 kalibry.sort((a,b)=>{
-return kolejnoscKalibrow.indexOf(a) - kolejnoscKalibrow.indexOf(b)
+
+const indexA = kolejnoscKalibrow.indexOf(a)
+const indexB = kolejnoscKalibrow.indexOf(b)
+
+// jeśli obu nie ma → sortuj alfabetycznie
+if (indexA === -1 && indexB === -1) {
+  return a.localeCompare(b)
+}
+
+// jeśli tylko A nie ma → na koniec
+if (indexA === -1) return 1
+
+// jeśli tylko B nie ma → na koniec
+if (indexB === -1) return -1
+
+// normalne sortowanie
+return indexA - indexB
+
 })
 
 // producenci
@@ -123,6 +140,8 @@ showDetails(item)
 
 function showDetails(item){
 
+if (!item) return
+  
 const container = document.getElementById("details")
 
 let html = `<h2>${item.model}</h2>`
