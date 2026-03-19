@@ -153,3 +153,34 @@ behavior: "smooth"
 })
 
 }
+
+function generateRow(producent, grupa = null){
+
+let html = "<tr>"
+html += `<td>${producent}</td>`
+
+kalibry.forEach(k=>{
+
+let modele
+
+if (grupa){
+modele = currentData.filter(x=>grupa.includes(x.producent) && x.kaliber==k)
+} else {
+modele = currentData.filter(x=>x.producent==producent && x.kaliber==k)
+}
+
+html += "<td><ul>"
+
+modele.forEach(m=>{
+html += `<li class="model" data-id="${m.model}" data-img="${m.img}">${m.model}</li>`
+})
+
+html += "</ul></td>"
+
+})
+
+html += "</tr>"
+
+tableHTML += html
+
+}
