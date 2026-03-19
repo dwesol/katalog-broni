@@ -1,6 +1,6 @@
 const katalog = {
 
-pistolety i rewolwery: [
+pistolety: [
 
 {
 producent:"Glock",
