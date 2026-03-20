@@ -141,14 +141,22 @@ showDetails(item)
 function showDetails(item){
 
 if (!item) return
-  
+
 const container = document.getElementById("details")
 
 let html = `<h2>${item.model}</h2>`
 
-html += `<img src="${item.img}">`
+html += `<div class="details-top">`
 
-// tabela specyfikacji
+// LEWA STRONA (zdjęcie)
+html += `
+<div class="details-img">
+  <img src="${item.img}">
+</div>
+`
+
+// PRAWA STRONA (specyfikacja)
+html += `<div class="details-spec">`
 html += `<table class="spec-table">`
 
 for (let key in item.spec){
@@ -159,9 +167,12 @@ html += `<tr>
 }
 
 html += `</table>`
+html += `</div>`
 
-// opis
-html += `<p>${item.opis}</p>`
+html += `</div>` // koniec details-top
+
+// OPIS (na całą szerokość)
+html += `<div class="details-desc">${item.opis}</div>`
 
 container.innerHTML = html
 container.style.display = "block"
