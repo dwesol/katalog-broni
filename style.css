@@ -82,3 +82,28 @@ font-weight:bold;
 width:40%;
 background:#f3f3f3;
 }
+
+.details-top{
+display:flex;
+gap:30px;
+align-items:flex-start;
+margin-bottom:20px;
+}
+
+.details-img{
+width:50%;
+}
+
+.details-img img{
+width:100%;
+border:1px solid #aaa;
+}
+
+.details-spec{
+width:50%;
+}
+
+.details-desc{
+margin-top:20px;
+line-height:1.6;
+}
