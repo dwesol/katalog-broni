@@ -1,20 +1,23 @@
 const katalog = {
 
 pistolety: [
-
 {
-producent:"Glock",
+producent:"GLOCK",
 kaliber:"9x19",
 model:"Glock 17",
 img:"img/glock17.jpg",
 
-opis:"Glock 17 to jeden z najbardziej rozpoznawalnych pistoletów na świecie. Charakteryzuje się prostą konstrukcją, wysoką niezawodnością i dużą pojemnością magazynka. Jest szeroko używany przez służby mundurowe oraz strzelców sportowych.",
+"opis:"Glock 17 – austriacki pistolet samopowtarzalny.
+Powstanie pistoletu wiąże się z konkursem "Pistole der 80er Jahre" na pistolet samopowtarzalny dla armii austriackiej, który miał zastąpić używane wcześniej Walthery P.38, Browningi HP oraz M1911A1.
+Według wymagań konkursu pistolet miał być zasilany nabojem 9 x 19 mm Parabellum oraz posiadać 16 naboi w obrębie kabury, co wymuszało zastosowanie magazynka o dużej pojemności lub zapasowego magazynka przenoszonego w kaburze. Broń miała być również przystosowana do bezpiecznego przenoszenia z nabojem w komorze nabojowej.
+Konkurs wygrał Glock 17 który został wprowadzony do uzbrojenia armii austriackiej w 1982 roku jako P80.
+Pistolety Glock stały się najbardziej dochodową linią produktów firmy i zostały dostarczone krajowym siłom zbrojnym, agencjom bezpieczeństwa i policji w co najmniej 48 krajach. Gloki są także popularną bronią palną wśród ludności cywilnej, stosowaną w strzelectwie rekreacyjnym i wyczynowym, w domu i samoobronie, zarówno w noszeniu ukrytym, jak i otwartym.","
 
 spec:{
 "Kaliber":"9x19",
 "Długość lufy":"11,4 cm",
 "Pojemność magazynka":"17",
-"Całkowita długość":"20,2 cm"
+"Całkowita długość":"20 cm",
 }
 },
 
