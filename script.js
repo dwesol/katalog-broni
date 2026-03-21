@@ -1,5 +1,5 @@
 const glowniProducenci = [
-"Glock",
+"Glock GmbH",
 "Walther",
 "SIG Sauer"
 ]
