@@ -52,7 +52,7 @@ spec:{
 
 {
 producent:"Ceska Zbrojovka",
-kaliber:"22 LR",
+kaliber:"9x19",
 model:"CZ P-09",
 img:"czp09.jpg",
 
@@ -68,7 +68,7 @@ spec:{
 
 {
 producent:"Ceska Zbrojovka",
-kaliber:"22 LR",
+kaliber:"9x19",
 model:"CZ SHADOW 2",
 img:"czshadow2.jpg",
 
