@@ -3,7 +3,10 @@ const katalog = {
 pistolety: [
 { producent:"Glock", kaliber:"9x19", model:"Glock 17", img:"img/glock17.jpg" },
 { producent:"Glock", kaliber:"9x19", model:"Glock 19", img:"img/glock19.jpg" },
-{ producent:"Walther", kaliber:"9x19", model:"PDP", img:"img/pdp.jpg" }
+{ producent:"Ceska Zbrojovka", kaliber:"22 LR", model:"CZ 122", img:"img/cz122.jpg" },
+{ producent:"Ceska Zbrojovka", kaliber:"9x19", model:"CZ P-09", img:"img/czp09.jpg" },
+{ producent:"Ceska Zbrojovka", kaliber:"9x19", model:"SHADOW 2", img:"img/shadow2.jpg" }
+
 ],
 
 pm: [
