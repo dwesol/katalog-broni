@@ -1,7 +1,8 @@
 const glowniProducenci = [
 "Glock GmbH",
 "Walther",
-"SIG Sauer"
+"SIG Sauer",
+"Ceska Zbrojovka"
 ]
 
 const kolejnoscKalibrow = [
