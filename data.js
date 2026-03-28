@@ -36,7 +36,7 @@ spec:{
 
 {
 producent:"Ceska Zbrojovka",
-kaliber:"22 LR",
+kaliber:".22 LR",
 model:"CZ 122",
 img:"img/cz122.jpg",
 
