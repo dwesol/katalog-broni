@@ -96,6 +96,22 @@ spec:{
 "Pojemność magazynka":"7",
 "Całkowita długość":"22,2 cm",
 }
+},
+
+{
+producent:"Canik",
+kaliber:".45 ACP",
+model:"TP9 SFX BLACK",
+img:"tp9sfxblack.jpg",
+
+opis:`<p>CCanik TP9 SFX BLACK został opracowany jako model Premium pistoletów z gamy TP9. Posiada lufę o długości 5,2 cala - co przekłada się na dłuższą linię celowania. Zamek posiada agresywne nacięcia dla pewnego i szybkiego przeładowania, oraz wycięcia odciążające, dzięki którym waga zamka porównywalna jest z innymi modelami serii TP9. Pozwoliło to pozostawić te same mechanizmy wewnętrzne jak i nie zmienioną geometrię komory nabojowej (odpowiadającej na właściwe ryglowanie lufy).</p><br><p>Tolerancje wykonania broni są dużo mniejsze co wraz ze zmniejszonym skokiem spustu przekłada się na precyzyjniejszą kontrolę nad bronią a co za tym idzie większą celność oddawanych strzałów. Świetne przyrządy celownicze również sprzyjają zwiększonej celności.</p>`,
+
+spec:{
+"Kaliber":"9x19",
+"Długość lufy":"13,2 cm",
+"Pojemność magazynka":"20",
+"Całkowita długość":"21 cm",
+}
 }
 
 ],
@@ -135,22 +151,6 @@ spec:{
 "Długość lufy":"41,5 cm",
 "Pojemność magazynka":"30",
 "Całkowita długość":"87 cm"
-}
-},
-
-{
-producent:"Canik",
-kaliber:".45 ACP",
-model:"TP9 SFX BLACK",
-img:"tp9sfxblack.jpg",
-
-opis:`<p>CCanik TP9 SFX BLACK został opracowany jako model Premium pistoletów z gamy TP9. Posiada lufę o długości 5,2 cala - co przekłada się na dłuższą linię celowania. Zamek posiada agresywne nacięcia dla pewnego i szybkiego przeładowania, oraz wycięcia odciążające, dzięki którym waga zamka porównywalna jest z innymi modelami serii TP9. Pozwoliło to pozostawić te same mechanizmy wewnętrzne jak i nie zmienioną geometrię komory nabojowej (odpowiadającej na właściwe ryglowanie lufy).</p><br><p>Tolerancje wykonania broni są dużo mniejsze co wraz ze zmniejszonym skokiem spustu przekłada się na precyzyjniejszą kontrolę nad bronią a co za tym idzie większą celność oddawanych strzałów. Świetne przyrządy celownicze również sprzyjają zwiększonej celności.</p>`,
-
-spec:{
-"Kaliber":"9x19",
-"Długość lufy":"13,2 cm",
-"Pojemność magazynka":"20",
-"Całkowita długość":"21 cm",
 }
 }
 
