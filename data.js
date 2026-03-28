@@ -100,7 +100,7 @@ spec:{
 
 {
 producent:"Canik",
-kaliber:".45 ACP",
+kaliber:"9x19",
 model:"TP9 SFX BLACK",
 img:"tp9sfxblack.jpg",
 
