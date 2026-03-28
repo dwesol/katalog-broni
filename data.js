@@ -160,6 +160,22 @@ spec:{
 "Pojemność magazynka":"12",
 "Całkowita długość":"24,5 cm",
 }
+},
+
+{
+producent:"Heckler & Koch",
+kaliber:"9x19",
+model:"SFP9",
+img:"img/hksfp9.jpg",
+
+opis:`<p>HK SFP9 to nowoczesny, bezkurkowy (z mechanizmem bijnikowym) pistolet niemieckiego producenta firmy Heckler und Koch. Firma ta znana jest z produkcji doskonałej jakości, niezawodnej i celnej broni. HK SFP9 to właściwie cała linia pistoletów, gdzie poszczególne modele różnią się sposobem zwalniania magazynka (typowo to „skrzydełka” w kabłąku spustowy, ale jest również wersja z przyciskiem w chwycie oznaczona PB), możliwością montażu tłumika, kolimatora czy też dużo lżejszym spustem (wersja SF = Special Forces).</p><p>WZamek posiada nacięcia zarówno z przodu jak i z tyłu - ułatwia to przeładowanie broni w dowolny, preferowany przez strzelca sposób. Dodatkowo tył zakończony jest gumowymi „skrzydełkami” (z możliwości demontażu) ułatwiającymi przeładowanie broni klasyczną „czapą” w każdych warunkach pogodowych.</p><p>HK SFP9 zbudowany jest w oparciu o nowoczesny szkielet polimerowy. Z przodu posiada szynę akcesoryjną w standardzie MIL-SPC 1913 do montażu akcesoriów, a chwyt posiada system wymiennych paneli, zarówno po bokach jak i z tyłu, dających łącznie 27 różnych konfiguracji. Wraz z odpowiednio dobraną teksturą zapewnia to solidny chwyt dla każdej dłoni.</p>`,
+
+spec:{
+"Kaliber":"9x19",
+"Długość lufy":"10,4 cm",
+"Pojemność magazynka":"15",
+"Całkowita długość":"18,6 cm",
+}
 }
 
 ],
