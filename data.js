@@ -146,6 +146,7 @@ spec:{
 }
 },
 
+{
 producent:"Heckler & Koch",
 kaliber:".45 ACP",
 model:"MK 23",
