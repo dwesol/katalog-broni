@@ -144,6 +144,21 @@ spec:{
 "Pojemność magazynka":"15",
 "Całkowita długość":"19,4 cm",
 }
+},
+
+producent:"Heckler & Koch",
+kaliber:".45 ACP",
+model:"MK 23",
+img:"hkmk23.jpg",
+
+opis:`<p>HK MK23 SOCOM – pistolet samopowtarzalny konstrukcji niemieckiej, opracowany przez firmę Heckler & Koch. Pistolet powstał w ramach programu OHWS (skrót od Offensive Handgun Weapon System) czyli pistolet ofensywny, przeznaczony dla amerykańskiego Dowództwa Operacji Specjalnych USSOCOM. Program zakładał, że nowo opracowywana broń powinna strzelać wzmocnionym nabojem kalibru 11,43*23 mm (.45 ACP) oraz być wyposażona w: samonapinanie, magazynek o pojemności co najmniej 10 nabojów, wskaźnik laserowy, tłumik dźwięku.</p><br><p>Broń przyjęto do uzbrojenia armii amerykańskiej 7 lipca 1996 roku pod oznaczeniem MK23 Mod 0 USSOCOM Pistol. HK MK23 jest pistoletem samopowtarzalnym, działającym na zasadzie krótkiego odrzutu lufy. Pistolet jest zasilany z dwurzędowego magazynka pudełkowego o pojemności 12 nabojów. Mark 23 ma stałe przyrządy celownicze, kontrastowe (z kolistymi plamkami na muszce i po obu stronach szczerbiny), wyregulowane na 25 m.</p><br><p>Produkowany na potrzeby amerykańskich oddziałów specjalnych. Na jego podstawie powstał HK USP. Używają go takie jednostki specjalne jak US Army Special Forces, Jednostka Wojskowa Komandosów oraz GROM.</p>`,
+
+spec:{
+"Kaliber":".45 ACP",
+"Długość lufy":"14,9 cm",
+"Pojemność magazynka":"12",
+"Całkowita długość":"24,5 cm",
+}
 }
 
 ],
