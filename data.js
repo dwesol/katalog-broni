@@ -112,6 +112,22 @@ spec:{
 "Pojemność magazynka":"20",
 "Całkowita długość":"21 cm",
 }
+},
+
+{
+producent:"Grand Power",
+kaliber:".22 LR",
+model:"K22",
+img:"img/gpk22.jpg",
+
+opis:`<p>Grand Power K22 to samopowtarzalny pistolet bocznego zapłonu, którego konstrukcja oparta została na korpusie pistoletów w kalibrze 9mm.</p><br><p>Pistolet posiada stalowy zamek który do złudzenia przypomina Berettę 92, a wszystkie manipulatory są identyczne jak w pistoletach bojowych. Magazynki są gabarytami identyczne w dwurzędowymi magazynkami 9x19 więc dodatkowo zbliżają obsługę broni do typowej broni bojowej. Mechanizm spustowo-uderzeniowy z kurkiem zewnętrznym pracuje w trybie DA/SA, a odchudzony zamek wykonano ze stali. Warto dodać, że płynny i lekki spust w trybie SA oraz stała ciężka lufa nie wyklucza używania broni z powodzeniem w rywalizacji tarczowej.</p>`,
+
+spec:{
+"Kaliber":".22 LR",
+"Długość lufy":"11,6 cm",
+"Pojemność magazynka":"10",
+"Całkowita długość":"18,7 cm",
+}
 }
 
 ],
