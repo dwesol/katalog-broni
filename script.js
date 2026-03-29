@@ -3,7 +3,9 @@ const glowniProducenci = [
 "Walther",
 "SIG Sauer",
 "Ceska Zbrojovka",
-"Heckler & Koch"
+"Heckler & Koch",
+"Łucznik",
+"Smith & Wesson"
 ]
 
 const kolejnoscKalibrow = [
