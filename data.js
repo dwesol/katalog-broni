@@ -224,6 +224,134 @@ spec:{
 "Pojemność magazynka":"17",
 "Całkowita długość":"10,3 cm",
 }
+},
+
+{
+producent:"Smith & Wesson",
+kaliber:".22 LR",
+model:"22A",
+img:"img/sw22a.jpg",
+
+opis:`<p>Smith & Wesson Model 22A to półautomatyczny pistolet, który został wyprodukowany w Houlton, Maine. 22A to pełnowymiarowy pistolet z ramą ze stopu aluminium. Stalowa lufa ma zintegrowaną szynę typu Weaver (podobną do Picatinny).</p><p>ZTen pistolet wyróżnia się dwiema cechami: Integralna szyna wzdłuż górnej krawędzi pistoletu umożliwia łatwy montaż celowników optycznych i innych akcesoriów. Aluminiowa rama pistoletu i osłonięta stopem lufa pomagają utrzymać niską wagę jak na pistolet pełnowymiarowy.</p>`,
+
+spec:{
+"Kaliber":".22 LR",
+"Długość lufy":"13,9 cm",
+"Pojemność magazynka":"10",
+"Całkowita długość":"24,1 cm",
+}
+},
+
+{
+producent:"Smith & Wesson",
+kaliber:".22 LR",
+model:"422",
+img:"img/sw422.jpg",
+
+opis:`<p>Smith & Wesson Model 422 to półautomatyczny pistolet kalibru .22 LR produkowany przez firmę Smith & Wesson. Model 422, produkowany od 1987 do 1996 roku, był wejściem firmy na lukratywny rynek pistoletów bocznego zapłonu w średniej cenie. W tym czasie nisza ta była zdominowana przez bardzo udane pistolety Sturm Ruger serii Mk I i Mk II. Smith & Wesson opuściło pozycję rynkową po 1966 roku, kiedy to Model 46 został wycofany z ich katalogu.</p><p>Model 422 wprowadzono z 12-nabojowym, wyjmowanym magazynkiem pudełkowym , ale później wprowadzono także 10-nabojowy magazynek, w odpowiedzi na zakaz sprzedaży magazynków o dużej pojemności wprowadzony w Kalifornii w 1992 r., który uniemożliwiał sprzedaż magazynków mieszczących więcej niż 10 nabojów.</p>`,
+
+spec:{
+"Kaliber":".22 LR",
+"Długość lufy":"11,4 cm",
+"Pojemność magazynka":"10",
+"Całkowita długość":"19,5 cm",
+}
+},
+
+{
+producent:"Łucznik",
+kaliber:"7,62x25",
+model:"TT",
+img:"img/tt.jpg",
+
+opis:`<p>Radziecki pistolet samopowtarzalny. W latach 1933–1951 podstawowy pistolet Armii Czerwonej / Radzieckiej. Produkowany w ZSRR do 1967 roku. Szeroko rozpowszechniony w krajach bloku wschodniego, gdzie uruchamiano produkcję licencyjną i/lub opracowywano wersje regionalne.</p><p>Po II wojnie światowej licencja na produkcję pistoletu TT została przekazana większości krajów bloku wschodniego znajdujących się w strefie wpływów ZSRR. Szacuje się, że powstało łącznie blisko 3 mln tych pistoletów. Obecnie w Chińskiej Republice Ludowej produkowane są (głównie na eksport) zmodyfikowane wersje pistoletu TT.</p><p>TT był do końca lat pięćdziesiątych produkowany również w Polsce przez Zakłady Metalowe Łucznik w Radomiu. W Ludowym Wojsku Polskim nosił oznaczenie 7,62 mm pistolet wojskowy wz. 33 (pw wz. 33). Został zastąpiony pistoletem P-64.</p>`,
+
+spec:{
+"Kaliber":"7,62x25",
+"Długość lufy":"11,6 cm",
+"Pojemność magazynka":"8",
+"Całkowita długość":"19,5 cm",
+}
+},
+
+{
+producent:"Łucznik",
+kaliber:"9x19",
+model:"VIS 100",
+img:"img/vis100.jpg",
+
+opis:`<p>RVIS 100(dawniej: PR-15 Ragun), – polski pistolet samopowtarzalny zasilany nabojem 9 x 19 mm Parabellum, skonstruowany w Fabryce Broni „Łucznik” w Radomiu. Obecnie wdrażany na wyposażenie Sił Zbrojnych Rzeczypospolitej Polskiej.</p><p>VIS 100 w założeniu ma zastąpić pistolety P-64 i P-83 jako podstawowa broń krótka Wojska Polskiego. Po raz pierwszy został oficjalnie zaprezentowany 1 lipca 2014 r. podczas otwarcia nowej siedziby Fabryki Broni Łucznik w Radomiu. Poinformowano wówczas, że wyprodukowano 12 sztuk, które przechodzą badania i testy. 5 lutego 2016 roku broń otrzymała certyfikat zgodności z wojskowymi Założeniami Taktyczno-Technicznymi na pistolet samopowtarzalny z 5 czerwca 2014 r.</p><p>Dostępny jest również w sprzedaży na rynek cywilny. Fabryka Broni posiada w ofercie cywilną wersję pistoletu oznaczoną jako VIS 100 M1, która w odróżnieniu od wersji wojskowej posiada między innymi możliwość montowania celowników kolimatorowych.</p>`,
+
+spec:{
+"Kaliber":"9x19",
+"Długość lufy":"11 cm",
+"Pojemność magazynka":"15",
+"Całkowita długość":"19,7 cm",
+}
+},
+
+{
+producent:"Springfield Armory",
+kaliber:"9x19",
+model:"XDM",
+img:"img/xdm.jpg",
+
+opis:`<p>Springfield Armory XDM (X-Treme Duty, M oznacza lufę klasy meczowej i spust klasy meczowej) to seria półautomatycznych pistoletów z polimerowym szkieletem. Są bardzo podobne do swojego poprzednika, pistoletu HS2000 (najbardziej znanego w Stanach Zjednoczonych jako Springfield Armory XD). Wyprodukowany w mieście Karlovac w Chorwacji przez HS Produkt (dawniej IM Metal), Springfield Armory XDM to nazwa marketingowa broni, która jest licencjonowana i sprzedawana w Stanach Zjednoczonych przez Springfield Armory, Inc.</p><p>VNajnowsza generacja pistoletów firmy HS Produkt to ulepszenie ich poprzedników. Najbardziej zauważalne różnice między poprzednimi modelami XD to wymienne tylne okładziny rękojeści i lufa klasy meczowej. Pierwszy XDM został wyprodukowany w kalibrze .40 S&W mieszczącym 16 naboi w magazynku. Wkrótce po nim pojawiły się pistolety 9 mm i .45 ACP. Również są dostępne pistolety subkompaktowe w kalibrach .40 S&W i 9 mm. Springfield wyprodukował serię pistoletów stricte do rywalizacji w zawodach w kalibrach 9 mm, .40 S&W i .45 ACP z lufą 5,25", z grubsza przypominającą 5-calowe pistolety taktyczne XD. Seria pistoletów XD zdobyła tytuł Broni Roku w 2009 roku.</p>`,
+
+spec:{
+"Kaliber":"9x19",
+"Długość lufy":"11,4 cm",
+"Pojemność magazynka":"19",
+"Całkowita długość":"20,3 cm",
+}
+},
+
+{
+producent:"Smith & Wesson",
+kaliber:".357 MAG",
+model:"686",
+img:"img/sw686.jpg",
+
+opis:`<p>Smith & Wesson 686- Rewolwery od lat kojarzą się z bronią produkowaną przez Smith & Wesson. Zaraz za Coltem, lub nawet obok niego. Wybór modeli oferowanych przez Smith & Wesson jest olbrzymi. Firma oferuje rewolwery od najmniejszych do prawdziwych kolosów. Zarówno w bocznym zapłonie jak i największe kalibry Magnum, uwielbiane przez sławnego detektywa, Brudnego Harry’ego. Najpopularniejsza seria to bez dwóch zdań modele ze szkieletem L-Frame - w USA określane jako średnie (Medium Frame) u nas to zdecydowanie „duża broń”. A najpopularniejszym kalibrem dla tego typu rewolweru jest .357 Magnum.</p><p>Popularnym przedstawicielem tej linii, zarówno w USA jak i w Polsce, jest Smith & Wesson 686 z lufą 6 cali, najchętniej u nas wybieraną, ze względu na najdłuższą linię celowania przy najdłuższej lufie dopuszczanej do strzelań sportowych precyzyjnych. A broń ta jest niezwykle precyzyjna. Sprzyja temu doskonała, kuta na zimno, stała lufa oraz rewelacyjny system SA/DA, który szczególnie w trybie SA - Single Action / pojedynczego działania, jest niezwykle lekki, o smukłej pracy i świetnym przełamaniu. Wprost idealny do strzelań tarczowych na 25m.</p>`,
+
+spec:{
+"Kaliber":".357 MAG",
+"Długość lufy":"15,2 cm",
+"Pojemność magazynka":"6",
+"Całkowita długość":"30,3 cm",
+}
+},
+
+{
+producent:"Taurus",
+kaliber:".357 MAG",
+model:"TRAKER 627",
+img:"img/t627.jpg",
+
+opis:`<p>Taurus Tracker 627- to rewolwer wyprodukowany przez brazylijską firmę Taurus. Jest to nowocześnie zaprojektowany rewolwer z lufą kalibru .357 Magnum.</p><p>PWyjątkowo wytrzymały i niezawodny Taurus Tracker 627 z wbudowanym kompensatorem zmniejsza potężny odrzut, aby zmaksymalizować komfort strzelania.</p><p>Rewolwer łączący w sobie klasyczną konstrukcję, kultowy kaliber i nowoczesną ergonomię. Wyposażony w mechanizm DA / SA, który sprawia, że dopasuje się zarówno do zwolenników szybkiego jak i precyzyjnego strzelania.</p>`,
+
+spec:{
+"Kaliber":".357 MAG",
+"Długość lufy":"10,2 cm",
+"Pojemność magazynka":"7",
+"Całkowita długość":"16,5 cm",
+}
+},
+
+{
+producent:"Ceska Zbrojovka",
+kaliber:".38 Special",
+model:"ZKR 551",
+img:"img/czzkr551.jpg",
+
+opis:`<p>Rewolwery ZKR 551 były produkowane w Zbrojovce Brno (obecnie ČESKÁ ZBROJOVKA) w byłej Czechosłowacji w latach 1957 – 1971. Wyprodukowano ich stosunkowo niewiele. Dla potrzeb polskich klubów strzeleckich, sprowadzono wówczas około 130 sztuk, obecnie według danych Policji zarejestrowane są 52 rewolwery.</p><p>ZKR 551 zachwyca ponadczasową formą: to piękno i elegancja w każdym calu. Na pierwszy rzut oka jest mocno archaiczny, ale przecież wystarczył niewielki lifting kształtu, by przemienił się w Winstona Sport – rewolwer tarczowy XXI wieku, o linii tyleż szykownej, co futurystycznej.</p><p>Broń ma grubą i ciężką lufę sześciocalową o wielograniastym zarysie zewnętrznym. W przeciwieństwie do ówczesnych topowych rewolwerów tarczowych, czechosłowacka konstrukcja ma bębenek opróżniany pojedynczo prętowym rozładownikiem schowanym w rurkowej osłonie i osadzony niewychylnie w zamkniętym szkielecie – rozwiązanie a la Peacemaker.</p><p>W strzelectwie sportowym taki archaiczny system ze stałą osią bębna wykazuje niezaprzeczalne zalety w porównaniu z nowocześniejszym bębnem wychylanym na jarzmie i wyposażonym w gwiazdkowy rozładownik, opróżniający od razu wszystkie komory nabojowe. Sztywna i zwarta konstrukcja wpływa zarówno na celność, jak i trwałość broni intensywnie użytkowanej w sporcie.</p>`,
+
+spec:{
+"Kaliber":".357 MAG",
+"Długość lufy":"15,1 cm",
+"Pojemność magazynka":"6",
+"Całkowita długość":"29,5 cm",
+}
 }
 
 ],
