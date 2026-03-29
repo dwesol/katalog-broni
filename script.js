@@ -1,7 +1,7 @@
 const mapaModeli = {}
 
 Object.values(katalog).flat().forEach(x=>{
-mapaModeli[x.model] = x
+  mapaModeli[x.model] = x
 })
 
 const glowniProducenci = [
