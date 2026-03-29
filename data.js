@@ -192,6 +192,22 @@ spec:{
 "Pojemność magazynka":"8",
 "Całkowita długość":"16 cm",
 }
+},
+
+{
+producent:"RUGER",
+kaliber:".22 LR",
+model:"MK IV",
+img:"img/rm4.jpg",
+
+	opis:`<p>Ruger MKII to półautomatyczny pistolet bocznego zapłonu występujący w innych wersjach: Standard, MK I Target, MK III i MK IV. Jest sprzedawany jako niedrogi pistolet bocznego zapłonu kalibru .22 przeznaczony do rekreacyjnego sportu i strzelania do celu oraz strzelania rekreacyjnego. Zaprojektowany przez założyciela firmy Williama B. Rugera. model Standard i jego kolejne wersje stały się najbardziej akceptowanymi i udanymi półautomatycznymi pistoletami kalibru .22, jakie kiedykolwiek wyprodukowano.</p>`,
+
+spec:{
+"Kaliber":".22 LR",
+"Długość lufy":"17,5 cm",
+"Pojemność magazynka":"10",
+"Całkowita długość":"28 cm",
+}
 }
 
 ],
