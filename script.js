@@ -272,7 +272,4 @@ tableHTML += html
 
 }
 
-let html = `<h2>${item.model}</h2>`
-html += `<h3>${item.producent}</h3>`
 
-<img src="${item.img}" onerror="this.src='img/placeholder.jpg'">
