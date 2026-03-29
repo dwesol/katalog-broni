@@ -235,8 +235,10 @@ behavior: "smooth"
 
 function generateRow(producent, grupa = null){
 
-let html = "<tr>"
-html += `<td>${producent}</td>`
+function generateRow(producent, grupa = null){
+
+let row = "<tr>"
+row += `<td>${producent}</td>`
 
 kalibry.forEach(k=>{
 
@@ -248,13 +250,20 @@ modele = currentData.filter(x=>grupa.includes(x.producent) && x.kaliber==k)
 modele = currentData.filter(x=>x.producent==producent && x.kaliber==k)
 }
 
-html += "<td><ul>"
+row += "<td><ul>"
 
 modele.forEach(m=>{
-html += `<li class="model" data-id="${m.model}" data-img="${m.img}">${m.model}</li>`
+row += `<li class="model" data-id="${m.model}" data-img="${m.img}">${m.model}</li>`
 })
 
-html += "</ul></td>"
+row += "</ul></td>"
+
+})
+
+row += "</tr>"
+
+return row
+}
 
 })
 
