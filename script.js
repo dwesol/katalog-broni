@@ -1,3 +1,9 @@
+const mapaModeli = {}
+
+Object.values(katalog).flat().forEach(x=>{
+mapaModeli[x.model] = x
+})
+
 const glowniProducenci = [
 "Glock GmbH",
 "Walther",
@@ -131,9 +137,7 @@ m.addEventListener("click",()=>{
 
 const name = m.dataset.id
 
-const item = Object.values(katalog)
-.flat()
-.find(x=>x.model === name)
+const item = mapaModeli[name]
 
 showDetails(item)
 
