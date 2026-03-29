@@ -11,8 +11,8 @@ const kolejnoscKalibrow = [
 "9x18",
 "9x19",
 ".45 ACP",
-".357 SIG",
-".357 Magnum",
+".357 MAG",
+".38 Special",
 "5.56x45",
 "7.62x39"
 ]
