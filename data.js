@@ -176,6 +176,22 @@ spec:{
 "Pojemność magazynka":"15",
 "Całkowita długość":"18,6 cm",
 }
+},
+
+{
+producent:"Łucznik",
+kaliber:"9x18",
+model:"P-83",
+img:"img/p83.jpg",
+
+opis:`<p>Polski pistolet wprowadzony do uzbrojenia na miejsce pistoletu P-64. Strzela nabojem 9×18 mm Makarowa.</p><p>P-83 został przyjęty do uzbrojenia przez Wojsko Polskie, Milicję Obywatelską, Policję, Służbę Bezpieczeństwa. Był także sprzedawany na cywilnym rynku broni. Produkcja seryjną pistoletu P-83 prowadzono w latach 1984–2000.</p><p>Następca P-64 został pozbawiony głównych wad swojego poprzednika. Ma pojemniejszy magazynek (o dwa naboje), wygodniejszy chwyt, oraz dzięki większej masie, charakteryzuje go słabsze oddziaływania na dłoń strzelca podczas strzelania (odrzut i podrzut).</p>`,
+
+spec:{
+"Kaliber":"9x18",
+"Długość lufy":"9 cm",
+"Pojemność magazynka":"8",
+"Całkowita długość":"16 cm",
+}
 }
 
 ],
