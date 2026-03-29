@@ -111,8 +111,48 @@ models.forEach(m=>{
 
 m.addEventListener("mouseenter",(e)=>{
 
+let timeout;
+
+models.forEach(m=>{
+
+m.addEventListener("mouseenter",(e)=>{
+
+timeout = setTimeout(()=>{
 img.src=m.dataset.img
 preview.style.display="block"
+},100)
+
+})
+
+m.addEventListener("mousemove",(e)=>{
+
+const previewWidth = preview.offsetWidth
+const previewHeight = preview.offsetHeight
+
+let x = e.pageX + 20
+let y = e.pageY + 20
+
+if (x + previewWidth > window.innerWidth) {
+  x = e.pageX - previewWidth - 20
+}
+
+if (y + previewHeight > window.innerHeight) {
+  y = e.pageY - previewHeight - 20
+}
+
+preview.style.left = x + "px"
+preview.style.top = y + "px"
+
+})
+
+m.addEventListener("mouseleave",()=>{
+
+clearTimeout(timeout)
+preview.style.display="none"
+
+})
+
+})
 
 })
 
