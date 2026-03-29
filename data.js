@@ -208,6 +208,22 @@ spec:{
 "Pojemność magazynka":"10",
 "Całkowita długość":"28 cm",
 }
+},
+
+{
+producent:"SIG Sauer",
+kaliber:"9x19",
+model:"P320",
+img:"img/ssp320.jpg",
+
+opis:`<p>SIG Sauer P320 to modułowy pistolet półautomatyczny wyprodukowany przez SIG Sauer, Inc., amerykański oddział SIG Sauer.</p><p>ZP320 z komorą 9 × 19 mm Parabellum został wprowadzony na rynek północnoamerykański 15 stycznia 2014 r., a następnie kompaktowy model .45 ACP na targach SHOT Show w styczniu 2015 r. 19 stycznia 2017 r. ogłoszono, że dostosowana wersja pistoletu SIG Sauer P320 zwyciężyła w konkursie armii Stanów Zjednoczonych w konkursie modułowego systemu pistoletu XM17. Pełnowymiarowy model będzie znany jako M1 , a kompaktowy model przenośny będzie znany jako M18.</p><p>HWedług The Washington Post P320 to jeden z najpopularniejszych pistoletów w Stanach Zjednoczonych.</p>`,
+
+spec:{
+"Kaliber":"9x19",
+"Długość lufy":"12 cm",
+"Pojemność magazynka":"17",
+"Całkowita długość":"10,3 cm",
+}
 }
 
 ],
