@@ -84,12 +84,11 @@ tableHTML += "</tr>"
 
 // główni producenci
 glowni.forEach(p=>{
-generateRow(p)
+tableHTML += generateRow(p)
 })
 
-// pozostali
 if (pozostali.length > 0){
-generateRow("Pozostali", pozostali)
+tableHTML += generateRow("Pozostali", pozostali)
 }
 
 tableHTML += "</table>"
