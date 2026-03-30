@@ -111,12 +111,13 @@ function attachHover() {
   let timeout;
 
   models.forEach(m => {
-    m.addEventListener("mouseenter", e => {
-      timeout = setTimeout(() => {
-        img.src = m.dataset.img;
-        preview.style.display = "block";
-      }, 100);
-    });
+m.addEventListener("mouseenter", e => {
+  // Wyczyść poprzednie obrazy
+  img.src = "";
+  // Ustaw nowe zdjęcie
+  img.src = m.dataset.img;
+  preview.style.display = "block";
+});
 
     m.addEventListener("mousemove", e => {
       const previewWidth = preview.offsetWidth;
