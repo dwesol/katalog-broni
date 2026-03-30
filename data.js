@@ -260,7 +260,7 @@ spec:{
 
 {
 producent:"Łucznik",
-kaliber:"7,62x25",
+kaliber:"7.62x25",
 model:"TT",
 img:"img/tt.jpg",
 
