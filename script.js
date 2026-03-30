@@ -195,7 +195,9 @@ function showDetails(item) {
   // Opis
   html += `<div class="details-desc">${item.opis}</div>`;
   container.innerHTML = html;
-  container.style.display = "block";
+  setTimeout(() => {
+  container.classList.add("show");
+}, 10);
 
   window.scrollTo({
     top: container.offsetTop,
@@ -206,6 +208,9 @@ function showDetails(item) {
 // Funkcja zamykająca szczegóły
 function closeDetails() {
   const container = document.getElementById("details");
-  container.innerHTML = "";
-  container.style.display = "none";
+  container.classList.remove("show");
+  setTimeout(() => {
+    container.innerHTML = "";
+    container.style.display = "none";
+  }, 300);
 }
