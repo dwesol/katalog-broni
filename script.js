@@ -174,7 +174,7 @@ function showDetails(item) {
   if (!item) return;
 
   const container = document.getElementById("details");
-  let html = `<div class="details-header">
+  let html = `<div class="details-box"><div class="details-header">
     <h2>${sanitize(item.model)}</h2>
     <button class="close-btn" onclick="closeDetails()">✕</button>
   </div><div class="details-top">`;
@@ -193,14 +193,16 @@ function showDetails(item) {
   html += `</table></div></div>`;
 
   // Opis
-  html += `<div class="details-desc">${item.opis}</div>`;
+  html += `<div class="details-desc">${item.opis}</div></div>`;
   container.innerHTML = html;
+  container.style.display = "flex";
+  
   setTimeout(() => {
-  container.classList.add("show");
-}, 10);
+    container.classList.add("show");
+  }, 10);
 
   window.scrollTo({
-    top: container.offsetTop,
+    top: 0,
     behavior: "smooth"
   });
 }
