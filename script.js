@@ -174,7 +174,10 @@ function showDetails(item) {
   if (!item) return;
 
   const container = document.getElementById("details");
-  let html = `<h2>${sanitize(item.model)}</h2><div class="details-top">`;
+  let html = `<div class="details-header">
+    <h2>${sanitize(item.model)}</h2>
+    <button class="close-btn" onclick="closeDetails()">✕</button>
+  </div><div class="details-top">`;
 
   // Zdjęcie
   html += `
@@ -198,4 +201,11 @@ function showDetails(item) {
     top: container.offsetTop,
     behavior: "smooth"
   });
+}
+
+// Funkcja zamykająca szczegóły
+function closeDetails() {
+  const container = document.getElementById("details");
+  container.innerHTML = "";
+  container.style.display = "none";
 }
