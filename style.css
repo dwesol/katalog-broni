@@ -116,10 +116,6 @@ margin-top:20px;
 line-height:1.6;
 }
 
-#details {
-  display: flex !important;
-}
-
 .details-box {
   background: white;
   padding: 30px;
