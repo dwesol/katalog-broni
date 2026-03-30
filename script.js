@@ -17,6 +17,7 @@ const glowniProducenci = [
 
 const kolejnoscKalibrow = [
   ".22 LR",
+  "7.62x25",
   "9x18",
   "9x19",
   ".45 ACP",
