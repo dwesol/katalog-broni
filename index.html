@@ -11,9 +11,11 @@
 
 <h1>Katalog broni</h1>
 
-<button onclick="renderCategory('pistolety')">Pistolety i rewolwery</button>
-<button onclick="renderCategory('pm')">Pistolety maszynowe</button>
-<button onclick="renderCategory('karabiny')">Karabiny</button>
+<div class="tabs-container">
+  <button class="tab-btn active" data-category="pistolety" onclick="renderCategory('pistolety')">Pistolety i rewolwery</button>
+  <button class="tab-btn" data-category="pm" onclick="renderCategory('pm')">Pistolety maszynowe</button>
+  <button class="tab-btn" data-category="karabiny" onclick="renderCategory('karabiny')">Karabiny</button>
+</div>
 
 <div id="table-container"></div>
 <div id="details"></div>
