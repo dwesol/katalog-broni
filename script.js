@@ -43,6 +43,14 @@ function renderCategory(cat) {
   const tableHTML = buildTable(kalibry, glowni, pozostali, currentData);
   document.getElementById("table-container").innerHTML = tableHTML;
 
+  // Zaznacz aktywny tab
+  document.querySelectorAll(".tab-btn").forEach(btn => {
+    btn.classList.remove("active");
+    if (btn.dataset.category === cat) {
+      btn.classList.add("active");
+    }
+  });
+
   // Aktywowanie efektów hover
   attachHover();
 }
