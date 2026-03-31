@@ -184,8 +184,11 @@ function showDetails(item) {
   if (!item) return;
 
   const container = document.getElementById("details");
-  let html = `<div class="details-box"><div class="details-header">
-    <h2>${sanitize(item.model)}</h2>
+let html = `<div class="details-box"><div class="details-header">
+    <div>
+      <h2>${sanitize(item.model)}</h2>
+      <p class="details-producer">${sanitize(item.producent)}</p>
+    </div>
     <button class="close-btn" onclick="closeDetails()">✕</button>
   </div><div class="details-top">`;
 
