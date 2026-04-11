@@ -27,31 +27,58 @@ const kolejnoscKalibrow = [
   "7.62x39"
 ];
 
+let currentView = "table"; // "table" lub "grid"
+let currentCategory = "pistolety";
+let currentSearch = "";
+
+// Inicjalizacja hash routingu
+function initHash() {
+  const hash = location.hash.replace("#", "");
+  if (hash && katalog[hash]) {
+    currentCategory = hash;
+  }
+}
+
 // Funkcja renderująca kategorię
 function renderCategory(cat) {
+  currentCategory = cat;
+  location.hash = cat;
+
   const currentData = validateKatalog(cat);
   if (!currentData) return;
 
-  // Kalibry - sortowanie
-  const kalibry = sortKalibry(new Set(currentData.map(x => x.kaliber)));
-
-  // Podział producentów
-  const producenci = [...new Set(currentData.map(x => x.producent))].sort();
-  const [glowni, pozostali] = splitProducenci(producenci);
-
-  // Generacja tabeli
-  const tableHTML = buildTable(kalibry, glowni, pozostali, currentData);
-  document.getElementById("table-container").innerHTML = tableHTML;
-
-  // Zaznacz aktywny tab
+  // Aktualizacja liczników na zakładkach
   document.querySelectorAll(".tab-btn").forEach(btn => {
-    btn.classList.remove("active");
-    if (btn.dataset.category === cat) {
-      btn.classList.add("active");
-    }
+    const btnCat = btn.dataset.category;
+    const count = katalog[btnCat] ? katalog[btnCat].length : 0;
+    btn.innerHTML = `${btn.dataset.label} <span class="tab-count">${count}</span>`;
+    btn.classList.toggle("active", btnCat === cat);
   });
 
-  // Aktywowanie efektów hover
+  renderView();
+}
+
+// Renderowanie aktualnego widoku (tabela lub karty)
+function renderView() {
+  const currentData = validateKatalog(currentCategory);
+  if (!currentData) return;
+
+  const search = currentSearch.trim().toLowerCase();
+  const filteredData = search
+    ? currentData.filter(x => x.model.toLowerCase().includes(search))
+    : currentData;
+
+  const container = document.getElementById("table-container");
+
+  if (currentView === "grid") {
+    container.innerHTML = buildGrid(filteredData);
+  } else {
+    const kalibry = sortKalibry(new Set(filteredData.map(x => x.kaliber)));
+    const producenci = [...new Set(filteredData.map(x => x.producent))].sort();
+    const [glowni, pozostali] = splitProducenci(producenci);
+    container.innerHTML = buildTable(kalibry, glowni, pozostali, filteredData);
+  }
+
   attachHover();
 }
 
@@ -85,7 +112,7 @@ function splitProducenci(producenci) {
   return [glowni, pozostali];
 }
 
-// Generowanie tabeli HTML - NAPRAWIONE
+// Generowanie tabeli HTML
 function buildTable(kalibry, glowni, pozostali, currentData) {
   let tableHTML = "<table><tr><th>Producent</th>";
   kalibry.forEach(k => {
@@ -105,6 +132,27 @@ function buildTable(kalibry, glowni, pozostali, currentData) {
   return tableHTML;
 }
 
+// Generowanie widoku kart
+function buildGrid(data) {
+  if (!data.length) {
+    return `<p class="no-results">Brak wyników wyszukiwania.</p>`;
+  }
+  let html = `<div class="cards-grid">`;
+  data.forEach(item => {
+    html += `<div class="card model" data-id="${sanitize(item.model)}" data-img="${sanitize(item.img)}">
+      <div class="card-img-wrap">
+        <img src="${sanitize(item.img)}" alt="${sanitize(item.model)}" loading="lazy">
+      </div>
+      <div class="card-info">
+        <span class="card-model">${sanitize(item.model)}</span>
+        <span class="card-meta">${sanitize(item.producent)} · ${sanitize(item.kaliber)}</span>
+      </div>
+    </div>`;
+  });
+  html += `</div>`;
+  return html;
+}
+
 // Oczyszczanie tekstu HTML
 function sanitize(str) {
   const temp = document.createElement("div");
@@ -117,37 +165,33 @@ function attachHover() {
   const models = document.querySelectorAll(".model");
   const preview = document.getElementById("preview");
   const img = document.getElementById("preview-img");
-  let timeout;
 
   models.forEach(m => {
-m.addEventListener("mouseenter", e => {
-  // Wyczyść poprzednie obrazy
-  img.src = "";
-  // Ustaw nowe zdjęcie
-  img.src = m.dataset.img;
-  preview.style.display = "block";
-});
+    m.addEventListener("mouseenter", e => {
+      img.src = "";
+      img.src = m.dataset.img;
+      preview.style.display = "block";
+    });
 
     m.addEventListener("mousemove", e => {
       const previewWidth = preview.offsetWidth;
       const previewHeight = preview.offsetHeight;
 
-      let x = e.pageX + 20;
-      let y = e.pageY + 20;
+      // Używamy clientX/Y (względem viewportu) zamiast pageX/Y
+      let x = e.clientX + 20;
+      let y = e.clientY + 20;
 
-      if (x + previewWidth > window.innerWidth) x = e.pageX - previewWidth - 20;
-      if (y + previewHeight > window.innerHeight) y = e.pageY - previewHeight - 20;
+      if (x + previewWidth > window.innerWidth) x = e.clientX - previewWidth - 20;
+      if (y + previewHeight > window.innerHeight) y = e.clientY - previewHeight - 20;
 
       preview.style.left = x + "px";
       preview.style.top = y + "px";
     });
 
     m.addEventListener("mouseleave", () => {
-      clearTimeout(timeout);
       preview.style.display = "none";
     });
 
-    // NOWE: Click handler do pokazania szczegółów
     m.addEventListener("click", () => {
       const item = mapaModeli[m.dataset.id];
       showDetails(item);
@@ -155,7 +199,7 @@ m.addEventListener("mouseenter", e => {
   });
 }
 
-// Generowanie wiersza tabeli - NAPRAWIONE
+// Generowanie wiersza tabeli
 function generateRow(producent, grupa = null, kalibry, currentData) {
   let row = "<tr>";
   row += `<td>${sanitize(producent)}</td>`;
@@ -168,11 +212,15 @@ function generateRow(producent, grupa = null, kalibry, currentData) {
       modele = currentData.filter(x => x.producent === producent && x.kaliber === k);
     }
 
-    row += "<td><ul>";
-    modele.forEach(m => {
-      row += `<li class="model" data-id="${sanitize(m.model)}" data-img="${sanitize(m.img)}">${sanitize(m.model)}</li>`;
-    });
-    row += "</ul></td>";
+    if (modele.length === 0) {
+      row += `<td class="empty-cell">—</td>`;
+    } else {
+      row += "<td><ul>";
+      modele.forEach(m => {
+        row += `<li class="model" data-id="${sanitize(m.model)}" data-img="${sanitize(m.img)}">${sanitize(m.model)}</li>`;
+      });
+      row += "</ul></td>";
+    }
   });
 
   row += "</tr>";
@@ -184,7 +232,7 @@ function showDetails(item) {
   if (!item) return;
 
   const container = document.getElementById("details");
-let html = `<div class="details-box"><div class="details-header">
+  let html = `<div class="details-box"><div class="details-header">
     <div>
       <h2>${sanitize(item.model)}</h2>
       <p class="details-producer">${sanitize(item.producent)}</p>
@@ -195,7 +243,7 @@ let html = `<div class="details-box"><div class="details-header">
   // Zdjęcie
   html += `
     <div class="details-img">
-      <img src="${sanitize(item.img)}">
+      <img src="${sanitize(item.img)}" alt="${sanitize(item.model)}">
     </div>`;
 
   // Specyfikacja
@@ -209,15 +257,10 @@ let html = `<div class="details-box"><div class="details-header">
   html += `<div class="details-desc">${item.opis}</div></div>`;
   container.innerHTML = html;
   container.style.display = "flex";
-  
+
   setTimeout(() => {
     container.classList.add("show");
   }, 10);
-
-  window.scrollTo({
-    top: 0,
-    behavior: "smooth"
-  });
 }
 
 // Funkcja zamykająca szczegóły
@@ -229,3 +272,37 @@ function closeDetails() {
     container.style.display = "none";
   }, 300);
 }
+
+// Przełącznik widoku tabela/karty
+function toggleView(mode) {
+  currentView = mode;
+  document.getElementById("btn-view-table").classList.toggle("active", mode === "table");
+  document.getElementById("btn-view-grid").classList.toggle("active", mode === "grid");
+  renderView();
+}
+
+// Inicjalizacja
+initHash();
+
+// Ustawienie etykiet zakładek (przed pierwszym renderem, by liczniki się poprawnie ustawiły)
+document.querySelectorAll(".tab-btn").forEach(btn => {
+  btn.dataset.label = btn.textContent.trim();
+});
+
+renderCategory(currentCategory);
+
+// Zamknięcie modalu kliknięciem w overlay
+document.getElementById("details").addEventListener("click", function(e) {
+  if (e.target === this) closeDetails();
+});
+
+// Zamknięcie modalu klawiszem ESC
+document.addEventListener("keydown", function(e) {
+  if (e.key === "Escape") closeDetails();
+});
+
+// Real-time search
+document.getElementById("search-input").addEventListener("input", function() {
+  currentSearch = this.value;
+  renderView();
+});
